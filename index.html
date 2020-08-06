@@ -7,28 +7,27 @@
 <head>
   <!-- Link your CSS stylesheet -->
   <link rel='stylesheet' href='index.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
   <nav class='links'>
-    <a class='nav-btn' href='#Plan'>
-      Plan your Visit
-    </a>
-    <a class='nav-btn' href='#Learn'> Learn about the Park</a>
-    <a class='nav-btn' href='#Get'> Get Involved
-    </a>
-
+    <a class='nav-btn plan-button' href='#Plan'> Plan your<br> Visit</a>
+    <a class='nav-btn learn-button' href='#Learn'> Learn About<br> the Park</a>
+    <a class='nav-btn get-button' href='#Get'> Get<br> Involved</a>
   </nav>
 
   <header class='top-section'>
-    <div class=mountain-image>
+    <div class='mountain-image'>
       <img src='assets/header_img.jpg' alt='mountain'>
     </div>
 
-    <h1>Yosemite Park Guide</h1>
-    <p>Come explore California’s beautiful wilderness.</p>
-    <p>Always open. Reservations are not available or required to enter the park.</p>
+    <div class='left-column-text'>
+      <h1>Yosemite Park Guide</h1>
+      <p><br>Come explore California’s beautiful wilderness.</p><br>
+      <p>Always open. Reservations are not available or required to enter the park.<br></p>
+    </div>
   </header>
 
   <section class='intro'>
@@ -42,23 +41,23 @@
 
   <section class='prep-info'>
     <img src="https://image.flaticon.com/icons/svg/2979/2979348.svg" alt='fire restrictions'>
-    <p>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the
-      park’s ecosystems. This blog provides updates about fires in Yosemite. Check for current fire restrictions.</p>
+    <p>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park’s ecosystems. This blog provides updates about fires in Yosemite. Check for <span class='bold-txt'> current fire restrictions</span>.</p>
 
     <img src="https://image.flaticon.com/icons/svg/820/820374.svg" alt='reservations'>
-    <p>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the park
-      entrance fee upon arrival (there's no need to pay it in advance).</p>
+    <p>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the <span class='bold-txt'>park entrance fee</span> upon arrival (there's no need to pay it in advance).</p><br>
   </section>
 
   <footer class='bottom-section'>
     <img src='assets/footer_img.jpg' alt='mountain landscape'>
   </footer>
 
-  <nav class='links'>
-    <a href='#Plan'>Plan your Visit</a>
-    <a href='#Learn'>Learn about the Park</a>
-    <a href='#Get'>Get Involved</a>
-  </nav>
+  <div class=bottom-links>
+    <nav class='links'>
+      <a class='nav-btn plan-button' href='#Plan'> Plan your<br> Visit</a>
+      <a class='nav-btn learn-button' href='#Learn'> Learn About<br> the Park</a>
+      <a class='nav-btn get-button' href='#Get'> Get<br> Involved</a>
+    </nav>
+  </div>
 
 </body>
 

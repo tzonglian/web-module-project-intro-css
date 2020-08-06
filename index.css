@@ -1,33 +1,32 @@
 /* CSS Reset */
 
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+/* border: 1px solid black; TEST CODE, CHANGE TO 0 BEFORE FINISH */
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 
 /* Whole Page */
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Mono&family=Noto+Sans+JP&display=swap');
-
 *{
+    padding:0;
+    margin:0;
     max-width: 100%;
-    box-sizing:border-box;
-    border:1px solid darkblue; /*TEST CODE, REMOVE BEFORE FINISH*/
+    box-sizing: border-box;
 }
 
 html{
@@ -42,45 +41,73 @@ i{
 
 /* Top Navigation */
 .links{
-    margin: 2%;
-    width: 80%;
     display: inline-block;
+    margin: 0 auto;
     text-align:center;
-    background-color: cyan;
-    font-family:'Noto Sans JP', sans-serif;
-}
-.nav-btn {
+    font-size:2rem;
+    width:100%;
     
-
 }
 
 .links a{
     color:white;
+    text-decoration:none;
 }
 
-/* #Plan{
-    background-color:red;
-} */
+.nav-btn {
+    display:inline-block;
+    padding: 2%;
+    width:20%;
+    height:auto;
+    margin: 2% 4%;
+    border-radius: 2rem;
+}
+
+.plan-button{
+    display:inline-block;
+    background:#FF764E;
+}
+
+.learn-button{
+    display:inline-block;
+    background:#5ED3EB;
+}
+
+.get-button{
+    display:inline-block;
+    background:#FFCD69;
+}
+
 
 /* Header */
 .top-section{
-    max-width:100%;
+    display:inline-block;
+    line-height:1.5;
+    position:relative;
+    height: 50%;
 }
 .mountain-image{
-    margin:10%;
+    display:inline-block;
+    width: 30%;
+    height: 30%;
+    margin: auto 5%;
+    border-radius:50%;
+    overflow:hidden;
 }
-h1{
-        font-family: 'Pangolin', cursive;
-        display:inline-block;
+.left-column-text{
+    display:inline-block;
+    width:50%;
+    text-align:center;
 }
-a{
-    size:10%;
-        width:10%;
-        margin-right:18%;
 
+h1{
+    display:inline-block;
+    font-family:'Chelsea Market', cursive;
+    font-size:4.5rem;
 }
+
 p{
-    font-family:inherit;
+    font-size:2.25rem;
 }
 
 
@@ -89,27 +116,35 @@ p{
     margin: 5% 10%;
     padding: 1% 2%;
     color: white;
-    background-color: burlywood; /*COLOR MATCH LATER*/
+    background-color: #DDB9A3; 
+    font-size:2rem;
 }
-
-
 
 /* Prep Info */
 .prep-info{
     display:inline-block;
     text-align: center;
     margin: auto 30%;
+    font-size:2rem;
+}
+
+.bold-txt{
+    font-weight:bold;
 }
 
 /* Footer */
 
 .bottom-section{
-    
+    display:inline-block;
+    width: 100%;
+}
+
+.bottom-section > img{
+    width:100%;
 }
 
 /* Bottom Navigation */
 .bottom-links{
-    background-color:blanchedalmond;
-    display:inline-box;
+    background:#F9E7DC;
 }
 
